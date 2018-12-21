@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="hr">
+<head>
+	<meta charset="UTF-8">
+	<title>FizzBuzz by Ivan M.</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Ivan">
+	<meta name="robots" content="index,follow">
+	<meta name="googlebot" content="index,follow">
+	<link rel="icon" href="favicon.ico" type="image/ico">
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <style>
+    body{
+        width: 100%;
+    }
+    #header{
+        background-color: black; 
+        height: 100%;
+        margin: 0px;
+
+    }
+    .h1{
+        text-align: center; 
+        font-weight: bold; 
+        max-width: 100%; 
+        font-size: 50px; 
+        margin: 0px; 
+        padding-top: 5px;
+        color: white;
+
+    }
+    #article{
+        font-size: 18px;
+        padding-left: 15px;
+        border: 3px solid black;
+        padding-top: 10px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #form{
+        
+        
+    }
+    </style>
+</head>
+<body>
+<header id="header">
+    <h1 class="h1">FizzBuzz Challenge</h1>
+    <h3 style="text-align: center; color: gray; font-family: Courier; max-width: 100%;">Made by Ivan Mikodanic</h3>
+</header>
+<hr style="border-width: 10px; margin-top: 0px; margin-bottom: 0px;">
+<section>
+    <article id="article">
+        <p>
+            This is an extended FizzBuzz challenge completed by Ivan Mikodanic. 
+            Here you can enter a number and my function will print out Fizz, Buzz and FizzBuzz in the box beside the form.
+        </p>
+    </article>
+    <br><br>
+    <div id="form" class="col-sm-3">
+        <form action="javascript: fizzbuzz()" class="form-inline" method="GET">
+            <label for="inpnum">FizzBuzz Challenge</label>
+            <input type="number" class="form-control form-horizontal" id="inpnum" placeholder="Enter a number here!!" required>
+            <button class="btn btn-success">Start</button>
+        </form>
+    </div>
+    <div class="col-sm-9 well">
+        <code>
+        <p id="outputBox">OUTPUT BOX</p>
+        </code>
+    </div>
+</section>
+<script src="fizzbuzz.js"></script>
+</body>
+</html>
